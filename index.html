@@ -4,18 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">  
   <title>Weather App</title>
 </head>
 
 <body>
+  <h1>Weather Dashboard</h1>
+  <div class="container">
+    <div class="weather-input">
+      <h3>Enter City Name</h3>
+      <input type="text" id="cityInput" placeholder="Ex. Tokyo, Dubai, London">
+      <button id="searchButton">Search</button>
+      <h2 id="savedCity"></h2>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2 id="userInput">Tokyo (1/3/2024)</h2>
+          <h4 id="temperature">Temperature: 70F</h4>
+          <h3 id="wind">Wind: 1 mph</h3>
+          <h3 id="humidity">Humidity: 7%</h3>
+        </div>
+        <div class="icon">
+          <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+          <h3>Moderate Rain</h3>
+        </div>
+      </div>
+      <div class="forecast">
+        <h2>5 Day Forecast</h2>
+        <ul class="forecast-icons">
+          <li class="weather-items">
+            <h2 id="userInput">London (1/3/2024)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4 id="forecastTemperature0">Temperature: 70F</h4>
+            <h3 id="forecastWindSpeed">Wind: 1 mph</h3>
+            <h3 id="forecastHumidity">Humidity: 7%</h3>
+          </li>
+          <li class="weather-items">
+            <h2 id="userInput">London (1/3/2024)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4 id="forecastTemperature1">Temperature: 70F</h4>
+            <h3 id="forecastWindSpeed">Wind: 1 mph</h3>
+            <h3 id="forecastHumidity">Humidity: 7%</h3>
+          </li>          <li class="weather-items">
+            <h2 id="userInput">London (1/3/2024)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4 id="forecastTemperature2">Temperature: 70F</h4>
+            <h3 id="forecastWindSpeed">Wind: 1 mph</h3>
+            <h3 id="forecastHumidity">Humidity: 7%</h3>
+          </li>          <li class="weather-items">
+            <h2 id="userInput">London (1/3/2024)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4 id="forecastTemperature3">Temperature: 70F</h4>
+            <h3 id="forecastWindSpeed">Wind: 1 mph</h3>
+            <h3 id="forecastHumidity">Humidity: 7%</h3>
+          </li>          <li class="weather-items">
+            <h2 id="userInput">London (1/3/2024)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4 id="forecastTemperature4">Temperature: 70F</h4>
+            <h3 id="forecastWindSpeed">Wind: 1 mph</h3>
+            <h3 id="forecastHumidity">Humidity: 7%</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <input id="search-input" type="text" placeholder="Enter City Name">
-  <button id="searchButton">Search</button>
-
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
